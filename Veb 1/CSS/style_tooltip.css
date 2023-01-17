@@ -1,0 +1,36 @@
+.user_list {
+    margin: 50px;
+}
+
+.user_list li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.user_list li::before,
+.user_list li::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.user_list li::before {
+    content: '';
+    border-bottom: 5px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 100%;
+}
+
+.user_list li::after {
+    content: attr(data-surname);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    top: calc(100% + 5px);
+}
+
+.user_list li:hover::after,
+.user_list li:hover::before {
+    display: block;
+}

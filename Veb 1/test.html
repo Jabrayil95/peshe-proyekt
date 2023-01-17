@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Test</title>
+    <style>
+        body {
+            height: 8000px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .inner_box {
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        .outer_box_1 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .outer_box_2 {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box outer_box_1">
+        1-ci box
+    </div>
+    <div class="box outer_box_2">
+        2-ci box
+    </div>
+
+
+</body>
+
+</html>

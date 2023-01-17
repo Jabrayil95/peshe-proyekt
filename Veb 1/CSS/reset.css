@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    float: left;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    float: left;
+}
+
+ul li,
+ol li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
